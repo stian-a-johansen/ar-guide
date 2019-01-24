@@ -3,9 +3,15 @@
 <!--<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>-->
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene>
+			<a-assets>
+			<a-mixin id="text"
+			  text="align: center; width: 6;
+			       value: Hello World!"
+			></a-mixin>
+		</a-assets>
 		<a-sky color="blue"></a-sky>
 		<a-box position="0 0 0" rotation="0 15 0" width="1" height="1" depth="1" color="#4CC3D9" scale-on-mouseenter="to: 2.2 2.2 2.2" scale-on-mouseleave="to: 2.2 2.2 2.2">
-			<a-text position="0 1 0" wrap-count="20" bmfont-text="color: blue; text: Blabla; align: center;"></a-text>
+			<a-text mixin="text" position="0 1 0" wrap-count="20" color='red'></a-text>
   		</a-box>
   		
 	</a-scene>
