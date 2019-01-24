@@ -13,6 +13,16 @@
 		<a-box position="0 0 0" rotation="0 15 0" width="1" height="1" depth="1" color="#4CC3D9" scale-on-mouseenter="to: 2.2 2.2 2.2" scale-on-mouseleave="to: 2.2 2.2 2.2">
 			<a-text mixin="text" position="0 1 0" wrap-count="20" color='red'></a-text>
   		</a-box>
+		
+      <a-entity position="0 2 5">
+        <a-entity camera look-controls wasd-controls>
+			<a-entity cursor="fuse: true; fuseTimeout: 500"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: black; shader: flat"
+  			</a-entity>
+    	</a-entity>
+      </a-entity>
   		
 	</a-scene>
 	<!--<a-scene embedded arjs>
